@@ -20,8 +20,22 @@ def main():
         except FileNotFoundError:
             st.error(f"❌ Video file '{video_path}' not found. Please check the path.")
 
+        st.markdown("""
+        ## 📥 How to Export CSV from Looker Studio
+        To export your CSV file from the Looker Studio report, follow these steps:
+        
+        1. **Open the Report**: [Click here to access the Looker Studio report](https://lookerstudio.google.com/u/0/reporting/f3b15314-d09d-4f40-bf3e-4bf37813dfd1/page/6zXD).
+        2. **Navigate to the Desired Page**: Go to the specific page where your data is displayed.
+        3. **Export the Data**:
+           - Click on the **Export** button (usually represented by a download icon).
+           - Choose **CSV** as the export format.
+           - Follow the on-screen prompts to save the file to your desired location.
+        
+        **Note:** Ensure you have the necessary permissions to export data from the report.
+        """, unsafe_allow_html=True)
+
     st.write("""
-    Upload a CSV file and specify the branded search terms you want to filter out. The app will process the data by:
+    Upload a CSV file from and specify the branded search terms you want to filter out. The app will process the data by:
     - Removing specified branded search terms
     - Filtering based on impressions
     - Calculating relevant metrics
