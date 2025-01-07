@@ -185,9 +185,8 @@ def main():
         else:
             st.error("❌ Please upload a CSV file before submitting.")
 
-# Footer
-        st.markdown("---")
-        st.markdown("© 2024 Calibre Nine | [GitHub Repository](https://github.com/chrisprideC9)")
-
 if __name__ == "__main__":
     main()
+
+st.markdown("---")
+st.markdown("© 2024 Calibre Nine | [GitHub Repository](https://github.com/chrisprideC9)")
