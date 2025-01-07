@@ -12,7 +12,7 @@ def main():
 
     # Add the MP4 video below the title using st.video within an expander
     with st.expander("📹 View Video Instructions"):
-        video_path = "/Users/christopherpride/Desktop/code/keyword_canibilisation/CleanShot 2025-01-07 at 15.14.38.mp4"  # Replace with your local video file path
+        video_path = "videos/instruction_video.mp4"  # Replace with your local video file path
         try:
             with open(video_path, "rb") as video_file:
                 video_bytes = video_file.read()
