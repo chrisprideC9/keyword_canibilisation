@@ -5,10 +5,10 @@ import plotly.express as px
 
 def main():
     # Set the page configuration
-    st.set_page_config(page_title="📊 Keyword Canibilisation", layout="wide")
+    st.set_page_config(page_title="📊 Keyword Cannibalisation", layout="wide")
 
     # App Title
-    st.title("📊 Keyword Canibilisation")
+    st.title("📊 Keyword Cannibalisation")
 
     # Add the MP4 video below the title using st.video within an expander
     with st.expander("📹 View Video Instructions"):
