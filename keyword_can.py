@@ -189,4 +189,4 @@ if __name__ == "__main__":
     main()
 
 st.markdown("---")
-st.markdown("© 2024 Calibre Nine | [GitHub Repository](https://github.com/chrisprideC9)")
+st.markdown("© 2025 Calibre Nine | [GitHub Repository](https://github.com/chrisprideC9)")
