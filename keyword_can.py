@@ -8,7 +8,7 @@ def main():
     st.set_page_config(page_title="📊 CSV Cleaner and Analyzer", layout="wide")
 
     # App Title
-    st.title("📊 CSV Cleaner and Analyzer")
+    st.title("📊 Keyword Canibilisation")
 
     # Add the MP4 video below the title using st.video within an expander
     with st.expander("📹 View Video Instructions"):
