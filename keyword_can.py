@@ -5,7 +5,7 @@ import plotly.express as px
 
 def main():
     # Set the page configuration
-    st.set_page_config(page_title="📊 CSV Cleaner and Analyzer", layout="wide")
+    st.set_page_config(page_title="📊 Keyword Canibilisation", layout="wide")
 
     # App Title
     st.title("📊 Keyword Canibilisation")
