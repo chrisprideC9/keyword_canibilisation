@@ -1,16 +1,25 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import os
-from io import StringIO, BytesIO
 import plotly.express as px
 
 def main():
     # Set the page configuration
     st.set_page_config(page_title="📊 CSV Cleaner and Analyzer", layout="wide")
 
-    # App Title and Description
+    # App Title
     st.title("📊 CSV Cleaner and Analyzer")
+
+    # Add the MP4 video below the title using st.video within an expander
+    with st.expander("📹 View Video Instructions"):
+        video_path = "/Users/christopherpride/Desktop/code/keyword_canibilisation/CleanShot 2025-01-07 at 15.14.38.mp4"  # Replace with your local video file path
+        try:
+            with open(video_path, "rb") as video_file:
+                video_bytes = video_file.read()
+                st.video(video_bytes, start_time=0)
+        except FileNotFoundError:
+            st.error(f"❌ Video file '{video_path}' not found. Please check the path.")
+
     st.write("""
     Upload a CSV file and specify the branded search terms you want to filter out. The app will process the data by:
     - Removing specified branded search terms
@@ -111,7 +120,7 @@ def main():
                     }).reset_index()
                     cannibalization = cannibalization[cannibalization['Landing Page'] > 1]
                     top_cannibalized = cannibalization.sort_values(by='Total Keyword Impressions', ascending=False).head(10)
-                    
+                
                 # Success message
                 st.success("✅ Data processing complete!")
 
@@ -162,8 +171,5 @@ def main():
         else:
             st.error("❌ Please upload a CSV file before submitting.")
 
-    else:
-        st.info("📌 Please fill out the configuration and upload your CSV file to get started.")
-
 if __name__ == "__main__":
-        main()
+    main()
